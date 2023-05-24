@@ -18,6 +18,7 @@ return new class extends Migration {
             $table->string('address');
             $table->string('city');
             $table->string('zip');
+            $table->foreignId('plant_id')->constrained('plants');
             $table->timestamps();
         });
     }

@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Plant extends Model
 {
     use HasFactory;
+
+    function farms()
+    {
+        return $this->belongsToMany(Farm::class);
+    }
 }
