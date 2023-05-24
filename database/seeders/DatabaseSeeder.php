@@ -19,5 +19,12 @@ class DatabaseSeeder extends Seeder
             'description' => 'Tomaten sind Früchte der Tomatenpflanze.',
             'stock' => '10'
         ]);
+
+        Plant::create([
+            'name' => 'Kartoffel',
+            'slug' => 'kartoffel',
+            'description' => 'Die Kartoffel ist eine Pflanzenart aus der Gattung der Nachtschattengewächse (Solanaceae).',
+            'stock' => '20'
+        ]);
     }
 }
