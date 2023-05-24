@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class FarmController extends Controller
 {
-    function findAll()
+    public function findAll()
     {
         return Farm::get();
     }
